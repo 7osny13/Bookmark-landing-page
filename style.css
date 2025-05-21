@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --Blue-600: hsl(231, 69%, 60%);
+    --Red-400: hsl(0, 94%, 66%);
+    --Grey-50: hsl(0, 0%, 97%);
+    --Blue-950: hsl(229, 31%, 21%);
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--Grey-50);
+    color: var(--Blue-950);
+    scroll-behavior: unset;
+}
+
+.navbar-nav , .navbar-nav button{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.navbar-nav a{
+    margin-right: 15px;
+}
+
+.navbar-nav button {
+    padding: 5px 20px;
+}
+
+.introduction {
+    border: none;
+    background-color: transparent ;
+}
+
+.introduction-img{
+    order: 2;
+}
+.introduction-text{
+    order: 1;
+}
+
+
+.introduction-text .card-body{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.introduction-text .card-body h5{
+    font-weight: 600;
+}
+
+
+.introduction-text .card-body .card-text{
+    font-size: 1.1rem;
+    font-weight: 300;
+    ;
+}
+
+.introduction .card-body .buttons{
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.introduction .card-body .buttons button:nth-child(2){
+    background-color: white;
+    color: var(--Blue-950);
+}
+
+
+.title-desc{
+    margin: 3rem 0;
+}
+
+.title-desc p {
+    width: 60%;
+    text-align: center;
+    margin-top: 0.9rem;
+}
+
+
+.features nav a {
+    all: unset;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.features nav a:hover{
+border-bottom: 3px solid var(--Red-400);
+padding-bottom: 0.5rem;
+margin-top: 1.5rem;
+
+}
+
+.features .card .card-text{
+    font-weight: 400;
+}
+
+.features .card button{
+    background-color: var(--Blue-600);
+}
+
+.download .col:nth-child(2) {
+    margin-top: 5rem;
+}
+
+.download .col:nth-child(3) {
+    margin-top: 10rem;
+}
+
+.download .card-img-top {
+    width: 40%;
+}
+
+.download .card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.contacts{
+background-color: var(--Blue-600);
+color: white;
+
+}
+
+.contacts button  {
+    background-color: var(--Red-400);
+}
+
+
+.footer {
+    background-color: var(--Blue-950) ;
+    
+}
+
+.footer * {
+    color: white;
+}
+
+footer .navbar{
+    --bs-navbar-padding-y: 0;
+    
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+   .introduction-img{
+    order: 1;
+}
+.introduction-text{
+    order: 2;
+}
+
+
+.introduction-text .card-body{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.card-body h5 , .card-body p , .card-body .buttons{
+    width: 100% !important;
+}
+
+.features nav li {
+    margin-top: 2rem; 
+}
+
+.features .card .card-body {
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.download .card {
+    width: 80%;
+    margin-left: 2rem;
+}
+
+.footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+}
